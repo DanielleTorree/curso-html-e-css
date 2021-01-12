@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-html.png" type="image/png">
+    <title>Revisão 002</title>
+    <style>
+        body{
+            color: rgb(36, 34, 34);
+            background-color:rgb(214, 241, 233);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tags <abbr title="HyperText Markup Language">HTML</abbr> para criação de sites.</h1>
+    <img src="logo-html.png" alt="Logo da linguagem HTML">
+    <h2>Tags de hierarquia de parágrafo.</h2>
+    <p>&lt;h1&gt; primeiro nível</p>
+    <p>&lt;h2&gt; segundo nível.</p>
+    <p>&lt;h3&gt; terceiro nível.</p>
+    <p>&lt;h4&gt; quarto nível.</p>
+    <p>&lt;h5&gt; quinto nível.</p>
+    <p>&lt;h6&gt; sexto nível.</p>
+    <h2>Tag de força</h2>
+    <p>Deixando a palavra mais <strong>forte</strong> com a tag &lt;strong&gt;.</p>
+    <h2>Tag de ênfase</h2>
+    <p>Deixando a paravra mais <em>enfática</em> com a tag &lt;em&gt;.</p>
+    <h2>Tag de deletar texto</h2>
+    <p>Delentendo uma <del>palavra</del> com a tag &lt;del&gt;.</p>
+    <h2>Tag de inserir texto</h2>
+    <p>Inserindo uma <ins>palavra</ins> com a tag &lt;ins&gt;</p>
+    <p>Você pode inserir uma <u>palavra</u> com a tag &lt;u&gt;, porém está tag não é semântica, já a tag ins é semântica.</p>
+    <h2>Tag de citação</h2>
+    <blockquote cite=""><p>Aqui tem uma citação em bloco com a tag &lt;blockquote cite="URL"&gt;.</p></blockquote> 
+    <p>Você ainda pode fazer outros tipos de <q>citações</q>, porém esta é mais usual para citações no meio do parágrafo. A tag é &lt;q&gt;.</p>
+    <h2>Tag de marcação de texto</h2>
+    <p>Marcando um <mark>texto</mark> com tag &lt;mark&gt;.</p>
+    <h2>Tag de sobrescrito</h2>
+    <p>Você pode escrever equações entre outras coisas com a tag &lt;sup&gt;, assim: x<sup>6</sup>+3x<sup>5</sup>-9x<sup>4</sup>+4x<sup>3</sup>+7x<sup>2</sup>-10x+3=0.</p>
+    <h2>Tag de subscrito</h2>
+    <p>Você pode escrever fórmula aquosa entre outras coisas, assim: H<sub>2</sub>O.</p>
+    <h2>Tag de lista ordenada</h2>
+    <pre>
+        <code>
+        &lt;ol&gt; Aqui está uma lista ordenada em código
+            &lt;li&gt; aqui está também os list item &lt;/li&gt;
+            &lt;li&gt; aqui está também os list item &lt;/li&gt;
+            &lt;li&gt; aqui está também os list item &lt;/li&gt;
+        &lt;/ol&gt;
+        </code>
+    </pre>
+    <ol> aqui está uma lista ordenada na íntegra
+        <li>aqui esta uma lista de item</li>
+        <li>aqui esta uma lista de item</li>
+        <li>aqui esta uma lista de item</li>
+    </ol>
+    <p><mark style="background-color: rgb(219, 66, 66); color:rgb(245, 228, 228);">ATENÇÃO!</mark> usei para representar o código da lista ordenada acima, as tags &lt;pre&gt;&lt;code&gt; código &lt;/pre&gt;&lt;/code&gt; (pre = para deixar o código mono-espaçado e code= para representar o código)</p>
+    <h2>Lista desordenada</h2>
+    <pre>
+        <code>
+            &lt;ul&gt; aqui está uma lista desordenada em código
+                &lt;li&gt; aqui esta uma lista de item &lt;/li&gt;
+                &lt;li&gt; aqui esta uma lista de item &lt;/li&gt;
+                &lt;li&gt; aqui esta uma lista de item &lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+    </pre>
+    <ul>aqui está uma lista ordenada na íntegra
+        <li>aqui esta uma lista de item</li>
+        <li>aqui esta uma lista de item</li>
+        <li>aqui esta uma lista de item</li>
+    </ul>
+    <h2>Lista aninhada</h2>
+    <pre>
+        <code>
+            &lt;ul&gt; aqui está uma lista desordenada em código
+                &lt;li&gt; 
+                aqui esta uma lista de item 
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                        
+                        &lt;li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt; aqui esta uma lista de item &lt;/li&gt;
+                &lt;li&gt; aqui esta uma lista de item &lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+    </pre>
+
+    <ul>aqui está uma lista aninhada na íntegra
+        <li>aqui esta uma lista de item</li>
+        <li>aqui esta uma lista de item
+            <ul>
+                <li>
+                    aqui esta um sub item da lista de item
+                </li>
+            </ul>
+        </li>
+        <li>aqui esta uma lista de item</li>
+    </ul>
+    <h2>Otxet Oditrevni = Texto Invertido</h2>
+    <p>Aqui temos um (<bdo dir="rtl"> texto invertido</bdo>= texto invertido) no sentido right to left com a tag &lt;bdo dir =  "rtl"&gt;</p>
+    <p>Aqui temos um (<bdo dir="ltr">texto invertido </bdo>= texto invertido) no sentido left to right com a tag &lt;bdo dir =  "ltr"&gt; </p>
+    <h2>Mais informações</h2>
+    <p style="background-color: rgb(219, 66, 66); color:rgb(245, 228, 228);">Não se atenha somente ao nosso material. Você também pode aprender no site que mantém as atualizações da linguagem HTML que está no link a seguir <a href="https://www.w3.org/"  target="_blank">W3C</a>.</p>
+    <h2>Links</h2>
+    <p>Vamos aprender a "linkar" páginas.</p>
+    <h3>Abrir link na mesma página</h3>
+    <p>Conheça mais sobre a linguagem HTML no site <a href="https://www.w3.org/">W3C</a>. A tag usada foi &lt;a href="URL"&gt;</p>
+    <h3>Abrir link em outra página</h3>
+    <p>Conheça também o site <a href="https://www.w3schools.com/" target="_blank">W3C School</a>, pois há nele diversos tutoriais sobre a linguagem HTML. A tag usada foi &lt;a href="URL" target="_blank"&gt;</p>
+    <h3>Abrir links das páginas do site</h3>
+    <p>Navegue também nesta outra página do nosso site, neste link: <a href="revisao001.html">Revisão 001</a>. Para isso, utilizamos a tag &lt;a href="revisao001.html"&gt;</p>
+    <p><mark style="background-color: rgb(219, 66, 66); color:rgb(245, 228, 228);">ATENÇÃO!</mark>  Como o link é para navegação dentro das páginas do nosso site, não precisamos usar a URL absoluta (o caminho inteiro), somente precisamos utilizar a URL relativa.</p>
+    <h3> E-mail Links</h3>
+    <a href="mailto:danielletorree01@gmail.com">E-mail Danielle Torres</a>
+    <p>A tag utilizada para abrir diretamente no e-mail da pessoa é &lt;a href="malito: e-mail"&gt;</p>
+
+</body>
+</html>
