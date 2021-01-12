@@ -1,0 +1,12 @@
+body{
+    background: black;
+    text-align: center;
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+}
+section {
+    margin: auto;
+
+}
